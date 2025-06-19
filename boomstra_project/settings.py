@@ -27,7 +27,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Boomstra.urls'
+ROOT_URLCONF = 'boomstra_project.urls'
 
 TEMPLATES = [
     {
@@ -45,7 +45,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Boomstra.wsgi.application'
+WSGI_APPLICATION = 'boomstra_project.wsgi.application'
 
 DATABASES = {
     'default': {
