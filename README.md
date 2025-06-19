@@ -38,8 +38,9 @@ the form.
 =======
 ## Django Project
 
-A minimal Django project named **Boomstra** with an app called **Login** is included in the `Boomstra/` directory. After installing Django, you can run the development server with:
+A minimal Django project named **Boomstra** with an app called **Login** is included in the `Boomstra/` directory. After installing Django, change into that directory and run the development server:
 
 ```bash
-python Boomstra/manage.py runserver
+cd Boomstra
+python manage.py runserver
 ```
