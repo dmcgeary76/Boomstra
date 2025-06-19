@@ -16,3 +16,21 @@ auth.add_user("username", "password")
 ```
 
 Run tests with `pytest`.
+
+## AddFamily Django App
+
+The `addfamily` app provides a simple view that allows an authenticated user who
+has the `is_parent` or `is_guardian` attribute to add children to a family
+group. The form collects the child's name, preferred username and password and
+creates a new user account for the child.
+
+To include the app in a Django project, add `boomstra.addfamily` to
+`INSTALLED_APPS` and include its URLs:
+
+```python
+# urls.py
+path('family/', include('boomstra.addfamily.urls')),
+```
+
+The template `addfamily/add_child.html` extends `base_generic.html` and renders
+the form.
