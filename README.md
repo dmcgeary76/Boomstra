@@ -17,6 +17,7 @@ auth.add_user("username", "password")
 
 Run tests with `pytest`.
 
+
 ## AddFamily Django App
 
 The `addfamily` app provides a simple view that allows an authenticated user who
@@ -34,3 +35,11 @@ path('family/', include('boomstra.addfamily.urls')),
 
 The template `addfamily/add_child.html` extends `base_generic.html` and renders
 the form.
+=======
+## Django Project
+
+A minimal Django project named **Boomstra** with an app called **Login** is included in the `Boomstra/` directory. After installing Django, you can run the development server with:
+
+```bash
+python Boomstra/manage.py runserver
+```
